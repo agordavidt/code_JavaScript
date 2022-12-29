@@ -8,3 +8,10 @@ let car = {
 };
 
 car.spec();
+console.log(car.brand);
+console.log(car.model);
+console.log(car.year);
+// add or modify the property of an object
+car.build = 'SUV';
+car.distance = '1000hrs'
+console.log(car.distance);
