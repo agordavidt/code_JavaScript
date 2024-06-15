@@ -113,9 +113,9 @@ let ul = document.querySelector('ul');
 
 //-- Sibling Node Traversal
 
-console.log(ul.previousSibling);
-console.log(ul.nextSibling);
+// console.log(ul.previousSibling);
+// console.log(ul.nextSibling);
 
-console.log(ul.previousElementSibling);
-console.log(ul.nextElementSibling)
+// console.log(ul.previousElementSibling);
+// console.log(ul.nextElementSibling)
 
