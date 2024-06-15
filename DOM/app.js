@@ -50,12 +50,12 @@
 /* **** CREATEING ELEMENTS *** */
 // we can create elements from our JavaScript file 
 
-const ulEl = document.querySelector('ul');
-console.log(ulEl);
+// const ulEl = document.querySelector('ul');
+// console.log(ulEl);
 
-const liEl = document.createElement('li');
-liEl.innerText = 'Lord rings';
-ulEl.append(liEl);
+// const liEl = document.createElement('li');
+// liEl.innerText = 'Lord rings';
+// ulEl.append(liEl);
 
 
 // // Difference between the modifying properties 
@@ -66,12 +66,56 @@ ulEl.append(liEl);
 
 /* ****** MODIFYING ATTRIBUTES & CLASSES  *******/
 
-liEl.setAttribute('class', 'list-items');
-liEl.removeAttribute('class');
+// liEl.setAttribute('class', 'list-items');
+// liEl.removeAttribute('class');
 
 // using classList
 
-liEl.classList.add('list-items');
+// liEl.classList.add('list-items');
+// liEl.classList.remove('list-items');
+
+// check if list element contains a class of 'list-items'
+
+// console.log(liEl.classList.contains('list-items'));
 
 // How to remove elements
-liEl.remove();
+// liEl.remove();
+
+
+// const tryEl = document.getElementsByClassName('list-items');
+
+// tryEl[1].remove();
+// console.log(tryEl);
+
+
+/****   TRANVERSE THE DOM ******* */
+
+// Parent Node Traversal
+let ul = document.querySelector('ul');
+
+// console.log(ul.parentNode.parentNode);
+// console.log(ul.parentElement.parentElement);
+
+// const html = document.documentElement;
+// console.log(html.parentNode);
+// console.log(html.parentElement);
+
+// -- Child Node Traversal
+
+// console.log(ul.childNodes);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+
+//
+// console.log(ul.children);
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
+
+//-- Sibling Node Traversal
+
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
+
+console.log(ul.previousElementSibling);
+console.log(ul.nextElementSibling)
+
