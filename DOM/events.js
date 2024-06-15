@@ -28,3 +28,6 @@ function changeBgColor(){
 
 newBackgroundColor.addEventListener('mouseover', changeBgColor);
 
+// the advantage of the javascript even is that you can apply mutlitiple events, can only apply on in the html element
+
+
